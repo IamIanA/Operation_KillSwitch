@@ -7,10 +7,10 @@ Feature #1: Class LinkedNode
     State Changes:
     Cases and Expected Behavior:
 
-Feature #1: Class LinkedList
+Feature #2: Class LinkedList
     Purpose:
     Assumptions:
     Inputs:
     Outputs:
     State Changes:
-    Cases and Expected Behavior:
+    Cases and Expected Behavior: hiiiiii
