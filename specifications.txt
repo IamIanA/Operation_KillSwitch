@@ -21,3 +21,6 @@ Specifcations:
         Outputs:
         State Changes:
         Cases and Expected Behavior: 
+            - Constructor: Initialize the list with head = nullptr.
+            - Destructor: Deletes the entire list.
+            - 
