@@ -37,4 +37,20 @@ UML diagrams
 
 
 
-write specifcations here
+write specifcations here:
+Feature #1: Class LinkedNode
+    Purpose:
+    Assumptions:
+    Inputs:
+    Outputs:
+    State Changes:
+    Cases and Expected Behavior:
+
+Feature #1: Class LinkedList
+    Purpose:
+    Assumptions:
+    Inputs:
+    Outputs:
+    State Changes:
+    Cases and Expected Behavior:
+
