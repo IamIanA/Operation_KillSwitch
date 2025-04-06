@@ -6,7 +6,7 @@ Feature #1: Class LinkedNode
     Outputs: A new node object with initialized fields
     State Changes: 
         - The ListNode constructor initializes all member variables.
-        - The destructor recursively deletes the next node to ensure cleanup.
+        - The destructor recursively deletes the next node to clean it up.
     Cases and Expected Behavior:
 
 Feature #2: Class LinkedList
