@@ -1,39 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-write specifcations here
-
-
-
-
-
-
-
-
-
-
 write specifcations here:
 Feature #1: Class LinkedNode
     Purpose:
