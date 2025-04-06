@@ -1,1 +1,10 @@
-UMl diagrams
+ _________________________
+|      ListNode           |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| - id: int               |
+| - data: double          |
+| - next: ListNode*       |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| + ListNode(int, double) |
+| + ~ListNode()           |
+ ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
