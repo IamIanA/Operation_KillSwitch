@@ -14,5 +14,3 @@ Feature #1: Class LinkedList
     Outputs:
     State Changes:
     Cases and Expected Behavior:
-
-
