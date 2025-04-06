@@ -1,10 +1,12 @@
 write specifcations here:
 Feature #1: Class LinkedNode
-    Purpose:
-    Assumptions:
-    Inputs:
-    Outputs:
-    State Changes:
+    Purpose: A single Node that stores an integer ID, a double value, and a pointer to the next node.
+    Assumptions: 
+    Inputs: int new_id and double new_data
+    Outputs: A new node object with initialized fields
+    State Changes: 
+        The ListNode constructor initializes all member variables.
+        The destructor recursively deletes the next node to ensure cleanup.
     Cases and Expected Behavior:
 
 Feature #2: Class LinkedList
