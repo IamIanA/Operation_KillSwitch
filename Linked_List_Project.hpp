@@ -12,8 +12,7 @@ class ListNode {
 
 };
 
-//hi
-//hiya
+
 
 class LinkedList {
     private:
