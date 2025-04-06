@@ -4,7 +4,33 @@
 | - id: int               |
 | - data: double          |
 | - next: ListNode*       |
+|                         |
 |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
 | + ListNode(int, double) |
 | + ~ListNode()           |
+|                         |
  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+ _________________________________
+|         LinkedList              |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| - head: ListNode*               |
+|                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| + LinkedList()                  |
+| + ~LinkedList()                 |
+| + get_head(): ListNode*         |
+| + push_front(int, double): void |
+| + push_back(int, double): void  |
+| + insert(int, double, int): void|
+| + search(int): double           |
+| + at(int): ListNode*            |
+| + size(): int                   |
+| + remove(int): bool             |
+| + remove_id(int): bool          |
+| + remove_data(double): bool     |
+| + print(): void                 |
+| + selection_sort(): void        |
+| + bubble_sort(): void           |   
+|                                 |
+ ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
