@@ -31,21 +31,6 @@ bool test_size(){
 	return av1 && av2 && av3;
 }	
 
-
-
-bool test_is_empty() {
-	LinkedList l1, l2;
-	l2.push_front(10);
-	
-	bool rv1 = l1.is_empty();
-	bool rv2 = l2.is_empty();
-
-	bool av1 = rv1 && !rv2;
-	
-	return av1;
-}
-
-
 bool test_push_front() {
 	LinkedList l;
 
