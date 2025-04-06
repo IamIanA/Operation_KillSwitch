@@ -66,5 +66,3 @@ bool test_push_back() {
 	//clean up
 	return av1 && av2 && av3;
 }	
-
-//if the list does not have an index that matches, return false. if the index is 0, add the node with th egiven value to the front of the listm otherwise, traverse to the given index, and add the node to that position, pushing further nodes one back
