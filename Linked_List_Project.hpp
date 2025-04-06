@@ -12,7 +12,7 @@ class ListNode {
 
 };
 
-// hi - naomi
+
 class LinkedList {
     private:
     ListNode* head;
