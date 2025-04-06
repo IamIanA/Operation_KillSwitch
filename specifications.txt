@@ -5,8 +5,8 @@ Feature #1: Class LinkedNode
     Inputs: int new_id and double new_data
     Outputs: A new node object with initialized fields
     State Changes: 
-        The ListNode constructor initializes all member variables.
-        The destructor recursively deletes the next node to ensure cleanup.
+        - The ListNode constructor initializes all member variables.
+        - The destructor recursively deletes the next node to ensure cleanup.
     Cases and Expected Behavior:
 
 Feature #2: Class LinkedList
