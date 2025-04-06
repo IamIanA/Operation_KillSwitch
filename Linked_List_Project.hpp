@@ -12,8 +12,6 @@ class ListNode {
 
 };
 
-//hi ian
-
 class LinkedList {
     private:
     ListNode* head;
