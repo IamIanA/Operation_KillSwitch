@@ -1,7 +1,55 @@
-how to run your code:
-how to run your tests:
+1) how to run your code:
+You can run the code by using the following command in the terminal, after properly installing the files:
+
+[command]
+
+2) how to run your tests:
+
+You can run the tests by using the following command in the terminal:
+
+[command]
 
 Questions
+a ) (Tom) <- we each to answer the questions for these
+b ) (Ollie)
+c ) (Naomi)
 
 
-how you divided the work among your group members:
+3) how you divided the work among your group members:
+
+To divid the work among the group I used a google sheet and 
+created a table of different tasked that needed to be acomplished.
+The chart can be accessed here: https://docs.google.com/spreadsheets/d/1xmEHvThoLqYWN4RGbgEASjSHlgDrBIuIG3cwAA2xAtE/edit?usp=sharing
+Each member of the group had specific tasks which were assigned to them
+at the start of the project. 
+
+What did Ian do?
+    Task 1) Add remaining LinkedList methods:
+        Ian had to Implement: get_head, search, at, remove, remove_key, 
+        remove_value, print, selection_sort, bubble_sort
+    Task 2) Final Integration / Zip of the fields:
+        Specifically he had to Combine the files, test, zip properly
+    Task 3) test_linked_list.cpp:
+        Here Ian created 4 of the tests for the methods
+
+What did Ollie do?
+    Task 1) test_linked_list.cpp:
+        Here Ollie had to write 3 of the tests for the methods
+    Task 2) Main.cpp-Question 2 (Years):
+        Ollie then had to complete question number 2 in main.cpp
+
+What did Tom do?
+    Task 1) Specifications.pdf:
+        Tom created both of the UML diagrams for both classes, ListNode and LinkedList
+    Task 2) Main.cpp-Question 1(Primes):
+        Tom had to complete the first question in main.cpp
+    Task 3) Report.pdf:
+        Tom had to create the report which included how to run the test
+        answers to the Qs, and adding who did What
+    
+What did Naomi do?
+    Task 1) main.cpp-Question 3 (NASDAQ):
+        Inside main Namoi had to complete question 3 
+    Task 2) Specifcations.pdf:
+        Naomi had to create Specifications for ListNode and LinkedList
+
