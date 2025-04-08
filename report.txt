@@ -49,7 +49,7 @@ What did Tom do?
     
 What did Naomi do?
     Task 1) main.cpp-Question 3 (NASDAQ):
-        Inside main Namoi had to complete question 3 
+        Inside main Naomi had to complete question 3 
     Task 2) Specifcations.pdf:
         Naomi had to create Specifications for ListNode and LinkedList
 
