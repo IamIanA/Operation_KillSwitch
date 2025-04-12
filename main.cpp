@@ -1,9 +1,36 @@
 #include <iostream>
+#include <vector>
+#include <iomanip>
 #include "linked_list.hpp"
 
 using namespace std;
 
 int main () {
+
+//Quesiton 1
+
+LinkedList primeList;
+
+    //The first 20 prime numbers
+    vector<int> primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71};
+
+    // Populate the list with primes (id) and their inverses (data)
+    for (int p : primes) {
+        double inverse = 1.0 / p; //Calculate the inverse
+        primeList.push_back(p, inverse);// Add to the list using your method
+    }
+    //Calculate the sum of the values (inverses) using a manual loop
+    double sumOfInverses = 0.0;
+    ListNode* current = primeList.get_head();// Get the head of the list
+    while (current != nullptr) { // Iterate through the list
+        sumOfInverses += current->data; // Add the data field (the inverse)
+        current = current->next; // Move to the next node
+    }
+
+    // Output the sum
+    cout << fixed << setprecision(10); //Set precision for output
+    cout << "The sum of the multiplicative inverses of the first 20 prime numbers is: " << sumOfInverses << endl;
+
 
 //Question 3
 LinkedList nasdaqList;
