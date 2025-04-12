@@ -1,13 +1,13 @@
 1) how to run your code:
 You can run the code by using the following command in the terminal, after properly installing the files:
 
-[command]
+g++ -std=c++11 main.cpp linked_list_project.cpp
 
 2) how to run your tests:
 
 You can run the tests by using the following command in the terminal:
 
-[command]
+g++ -std=c++11 test_liked_list_diff.cpp linked_list_project.cpp
 
 Questions
 a ) (Tom) The sum of the multiplicative inverses of the first 20 prime numbers is: 1.7428669169.
