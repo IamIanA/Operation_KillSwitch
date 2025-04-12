@@ -99,6 +99,7 @@ int LinkedList:: size() {
         count ++;
         iter = iter -> next;
     }
+    return count;
 }
 
 bool LinkedList:: remove(int index) {
