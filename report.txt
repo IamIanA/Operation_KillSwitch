@@ -10,7 +10,7 @@ You can run the tests by using the following command in the terminal:
 [command]
 
 Questions
-a ) (Tom) <- we each to answer the questions for these
+a ) (Tom) The sum of the multiplicative inverses of the first 20 prime numbers is: 1.7428669169.
 b ) (Ollie)
 c ) (Naomi) -> 16404.27
 
