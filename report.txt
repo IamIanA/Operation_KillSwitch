@@ -12,7 +12,7 @@ You can run the tests by using the following command in the terminal:
 Questions
 a ) (Tom) <- we each to answer the questions for these
 b ) (Ollie)
-c ) (Naomi)
+c ) (Naomi) -> 16404.27
 
 
 3) how you divided the work among your group members:
