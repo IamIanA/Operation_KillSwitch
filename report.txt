@@ -12,7 +12,7 @@ g++ -std=c++11 test_liked_list_diff.cpp linked_list_project.cpp
 Questions
 a ) (Tom) The sum of the multiplicative inverses of the first 20 prime numbers is: 1.7428669169.
 b ) (Ollie)
-c ) (Naomi) -> The total cost of buying 3 shares of each company is $16404.27
+c ) (Naomi) -> The total cost of buying 3 shares of each company using the data from March 14th 2025 is $16404.27
 
 
 3) how you divided the work among your group members:
