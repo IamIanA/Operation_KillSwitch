@@ -158,14 +158,13 @@ bool test_remove_id() {
 
 }
 
-<<<<<<< HEAD
 bool test_remove_data() {
     //set up
     LinkedList l;
-    l.push_back(1, 10);
-    l.push_back(2, 20);
-    l.push_back(3, 30);
-    l.push_back(4, 40);
+    l.push_back(1, 10.0);
+    l.push_back(2, 20.0);
+    l.push_back(3, 30.0);
+    l.push_back(4, 40.0);
 
     //execution
     ListNode* l_head = l.get_head();
@@ -211,25 +210,3 @@ void test_bubble_sort() {
     l.print();
 }
 
-=======
-bool test_remove_data() {
-	LinkedList l;
-	l.push_back(1, 10.0);
-	l.push_back(2, 20.0);
-	l.push_back(3, 30.0);
-
-	bool case1 = l.remove_data(20.0);
-	bool validate1 = l.get_head() -> data == 10.0 && l.get_head() -> next -> data == 30.0;
-
-	bool case2 = l.remove_data(10.0);
-	bool validate2 = l.get_head() -> data == 30.0 && l.get_head() -> next == nullptr;
-
-	bool case3 = !l.remove_data(50.0);
-	
-	bool case4 = l.remove_data(30.0);
-	bool validate4 = l.get_head() == nullptr;
-
-	return case1 && validate1 && case2 && validate2 && case3 && case4 && validate4; 
-
-}
->>>>>>> 14f516e52c2323f88f832ba1e8c1d89bcc1ccb21
