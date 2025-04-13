@@ -35,7 +35,7 @@ LinkedList primeList;
 //Question 2
 
 LinkedList years;
-years.push_back(1,365.25);          //Julian
+years.push_back(1, 365.25);          //Julian
 years.push_back(2, 365.24219);      //Revised
 years.push_back(3, 365.2425);       //Gregorian
 years.push_back(4, 365.25636);      //Siderial
@@ -45,18 +45,26 @@ years.push_back(7, 346.62);         //Eclipse
 years.push_back(8, 411.78443029);   //Full moon
 years.push_back(9, 365.2568983);    //Gaussian
 
-years.print();
-years.selection_sort();
-years.print();
+double min = years.get_head()->data;
+double max = years.get_head()->data;
 
-double min = years.get_head()->data * 10000.0;
-double max = years.get_head()->data * 10000.0;
+ListNode* cur_index = years.get_head();// Get the head of the list
+    while (cur_index != nullptr) { // Iterate through the list
+        if (cur_index->data > max) {
+            max = cur_index->data;
+        }
+        if (cur_index->data < min) {
+            min = cur_index->data;
+        }
+        cur_index = cur_index->next; // Move to the next node
+    }
+min = min * 10000.0;
+max = max * 10000.0;
 
 double diff = max - min;
 
 std::cout << "Smallest value: " << min << ", largest value: " << max << ", difference: " << diff << std::endl;
         
-return 0;
 
 //Question 3
 LinkedList nasdaqList;
@@ -83,7 +91,10 @@ double totalCost = 0.0;
 // iter head or head equals 
 ListNode* current_index = nasdaqList.get_head();// Get the head of the list
 while (current_index != nullptr) { // Iterate through the list
-    totalCost = totalCost + (3 * company->data); // Add the data field (the inverse)
-    company = company->next; // Move to the next node
-    cout << "Total cost of buying 3 shares of each company on March 14th 2025: $" << totalCost << endl;
+    totalCost = totalCost + (3 * current_index->data); // Add the data field (the inverse)
+    current_index = current_index->next; // Move to the next node
+}
+cout << "Total cost of buying 3 shares of each company on March 14th 2025: $" << totalCost << endl;
+
+return 0;
 }
