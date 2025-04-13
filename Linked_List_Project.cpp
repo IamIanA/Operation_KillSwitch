@@ -190,8 +190,6 @@ bool LinkedList:: remove_data(double data) {
     return false;
 }
 
-bool remove_data_fake(double data){}    //////////////////////////////////////////////////////////
-
 void LinkedList:: print() {
     if (head == nullptr) {
         std:: cout << "The List is empty." << std:: endl;
@@ -243,9 +241,6 @@ void LinkedList:: selection_sort() {
 
 
 }
-
-void LinkedList:: selection_sort_fake() {}
-void LinkedList:: bubble_sort_fake() {}
 
 void LinkedList:: bubble_sort() {
     if (head == nullptr || head -> next == nullptr) {
