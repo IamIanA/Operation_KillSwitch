@@ -10,6 +10,8 @@ bool test_at();
 bool test_remove();
 bool test_remove_id();
 bool test_remove_data();
+bool test_selection_sort();
+bool test_bubble_sort();
 
 int main() {
 	std:: cout << "Test Push Back: " << (test_push_back() ? "Passed" : "Failed") << std:: endl;
@@ -178,7 +180,7 @@ bool test_remove_data() {
 }
 
 
-void test_selection_sort() {
+bool test_selection_sort() {
     //set up
     LinkedList l;
     l.push_back(0, 2);
@@ -192,9 +194,10 @@ void test_selection_sort() {
     //validation
     std::cout << "Selection sort" << std::endl;
     l.print();
+	return true;
 }
 
-void test_bubble_sort() {
+bool test_bubble_sort() {
     //set up
     LinkedList l;
     l.push_back(0, 2);
@@ -208,5 +211,6 @@ void test_bubble_sort() {
     //validation
     std::cout << "Bubble sort:" << std::endl;
     l.print();
+	return true;
 }
 
