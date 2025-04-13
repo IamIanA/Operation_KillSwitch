@@ -14,7 +14,8 @@ ListNode:: ~ListNode() {
         next = nullptr;
     }
 };
- 
+    
+
 
 LinkedList:: LinkedList() {
     head = nullptr;
@@ -54,7 +55,7 @@ void LinkedList:: push_front(int id, double data) {
 }
 
 void LinkedList:: insert(int id, double data, int index) {
-    if (index = 0) {
+    if (index == 0) {
         push_front(id , data);
         return;
     } 
@@ -65,7 +66,7 @@ void LinkedList:: insert(int id, double data, int index) {
         iter = iter -> next; 
     }
 
-    if (iter = nullptr) {
+    if (iter == nullptr) {
         std:: cerr << "You're out of bounds. \n";
         delete new_node;
         return;
@@ -135,7 +136,7 @@ bool LinkedList:: remove_id(int id) {
         return false;
     }
 
-    if (head -> id = id) {
+    if (head -> id == id) {
         ListNode* temp = head;
         head = head -> next;
         temp -> next = nullptr; 
@@ -162,7 +163,7 @@ bool LinkedList:: remove_data(double data) {
         return false;
     }
 
-    if (head -> data = data) {
+    if (head -> data == data) {
         ListNode* temp = head;
         head = head -> next;
         temp -> next = nullptr; 
@@ -185,7 +186,7 @@ bool LinkedList:: remove_data(double data) {
     return false;
 }
 
-void LinkedList:: print() {
+void LinkedList:: pretty_Print() {
     if (head == nullptr) {
         std:: cout << "The List is empty." << std:: endl;
         return;
