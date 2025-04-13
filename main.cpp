@@ -45,11 +45,11 @@ years.push_back(7, 346.62);         //Eclipse
 years.push_back(8, 411.78443029);   //Full moon
 years.push_back(9, 365.2568983);    //Gaussian
 
-int min = years.at(1)->data;
-int max = years.at(1)->data;
-int temp;
 
-years.
+years.selection_sort();
+
+int min = years.at(1)->data * 10000;
+int max = years.at(years.size)->data * 10000;
 
 int diff = max - min;
 
