@@ -96,5 +96,9 @@ while (current_index != nullptr) { // Iterate through the list
 }
 cout << "Total cost of buying 3 shares of each company on March 14th 2025: $" << totalCost << endl;
 
+<<<<<<< HEAD
+=======
 return 0;
 }
+
+>>>>>>> 56b2f058f82fa67d9ca1c83d89fd233d09fc21b5
