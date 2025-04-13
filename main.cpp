@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
-#include "linked_list.hpp"
+#include "Linked_list_Project.hpp"
 
 using namespace std;
 
@@ -48,8 +48,8 @@ years.push_back(9, 365.2568983);    //Gaussian
 
 years.selection_sort();
 
-double min = years.at(1)->data * 10000;
-double max = years.at(years.size)->data * 10000;
+double min = years.get_head()->data * 10000.0;
+double max = years.get_head()->data * 10000.0;
 
 double diff = max - min;
 
@@ -79,8 +79,8 @@ nasdaqList.push_back(15, 312.23); // Amgen
 
 double totalCost = 0.0;
 for (int i = 0; i < nasdaqList.size(); i++) {
-    Node* company = nasdaqList.at(i);
-    totalCost = totalCost + (3 * company->value);
+    ListNode* company = nasdaqList.at(i);
+    totalCost = totalCost + (3 * company->data);
 }
 cout << "Total cost of buying 3 shares of each company: $" << totalCost << endl;
 
