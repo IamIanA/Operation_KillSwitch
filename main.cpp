@@ -34,7 +34,6 @@ LinkedList primeList;
 
 //Question 2
 
-int main {
     LinkedList years;
     years.push_back(1,365.25);          //Julian
     years.push_back(2, 365.24219);      //Revised
@@ -65,11 +64,7 @@ int main {
 
     int diff = max - min;
 
-    std::cout << "Smallest value: " << min << ", largest value: " << max << ", difference: " << diff << std::endl;s
-        
-    return 0;
-}
-
+    std::cout << "Smallest value: " << min << ", largest value: " << max << ", difference: " << diff << std::endl;
 
 //Question 3
 LinkedList nasdaqList;
