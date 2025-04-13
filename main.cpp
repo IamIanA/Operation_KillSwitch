@@ -48,10 +48,10 @@ years.push_back(9, 365.2568983);    //Gaussian
 
 years.selection_sort();
 
-int min = years.at(1)->data * 10000;
-int max = years.at(years.size)->data * 10000;
+double min = years.at(1)->data * 10000;
+double max = years.at(years.size)->data * 10000;
 
-int diff = max - min;
+double diff = max - min;
 
 std::cout << "Smallest value: " << min << ", largest value: " << max << ", difference: " << diff << std::endl;
         
