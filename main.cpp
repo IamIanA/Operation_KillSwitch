@@ -98,4 +98,3 @@ cout << "Total cost of buying 3 shares of each company on March 14th 2025: $" <<
 
 return 0;
 }
-
