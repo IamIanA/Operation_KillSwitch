@@ -34,12 +34,12 @@ class LinkedList {
     bool remove(int index); // Removes the node at the specified index and returns true if successful
     bool remove_id(int id); // Removes the node with the specified id and returns true if successful
     bool remove_data(double data); // Removes the node with the specified data value and returns true if successful
+    bool remove_data_fake(double data);
 
     void print(); // Prints all the nodes in the linked list
 
     void selection_sort(); // Sorts the linked list using the selection sort algorithm
     void bubble_sort(); // Sorts the linked list using the bubble sort algorithm
-
 };
 
 

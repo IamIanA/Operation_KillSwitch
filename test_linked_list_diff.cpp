@@ -20,8 +20,9 @@ int main() {
 	std:: cout << "Test at function: " << ( test_at() ? "Passed" : "Failed" ) << std:: endl;
 	std:: cout << "Test remove function: " << ( test_remove() ? "Passed" : "Failed" ) << std:: endl;
 	std:: cout << "Test remove id function: " << ( test_remove_id() ? "Passed" : "Failed" ) << std:: endl;
-	std:: cout << "Test remove data function: " << ( test_remove_data() ? "Passed" : "Failed" ) << std:: endl;
-	
+	std:: cout << "Test remove data function: " << ( test_remove_data() ? "Passed!" : "Failed") << std::endl;
+    std:: cout << "Test selection sort function: " << ( test_selection_sort() ? "Passed!" : "Failed") << std::endl;
+    std:: cout << "Test bubble sort function: " << ( test_bubble_sort() ? "Passed!" : "Failed") << std::endl;
 }
 
 bool test_size(){
@@ -157,6 +158,60 @@ bool test_remove_id() {
 
 }
 
+<<<<<<< HEAD
+bool test_remove_data() {
+    //set up
+    LinkedList l;
+    l.push_back(1, 10);
+    l.push_back(2, 20);
+    l.push_back(3, 30);
+    l.push_back(4, 40);
+
+    //execution
+    ListNode* l_head = l.get_head();
+
+    bool rv1 = l.remove_data(30);
+
+    //validation
+    bool av1 = rv1 && l_head->next->next->data == 40;
+
+    return av1;
+}
+
+
+void test_selection_sort() {
+    //set up
+    LinkedList l;
+    l.push_back(0, 2);
+    l.push_back(1, 4);
+    l.push_back(2, 1);
+    l.push_back(3, 3);
+
+    //execution
+    l.selection_sort();
+
+    //validation
+    std::cout << "Selection sort" << std::endl;
+    l.print();
+}
+
+void test_bubble_sort() {
+    //set up
+    LinkedList l;
+    l.push_back(0, 2);
+    l.push_back(1, 4);
+    l.push_back(2, 1);
+    l.push_back(3, 3);
+
+    //execution
+    l.bubble_sort();
+
+    //validation
+    std::cout << "Bubble sort:" << std::endl;
+    l.print();
+}
+
+=======
 bool test_remove_data() {
 	LinkedList l;
 	l.push_back(1, 10.0);
@@ -177,3 +232,4 @@ bool test_remove_data() {
 	return case1 && validate1 && case2 && validate2 && case3 && case4 && validate4; 
 
 }
+>>>>>>> 14f516e52c2323f88f832ba1e8c1d89bcc1ccb21

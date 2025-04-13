@@ -32,6 +32,45 @@ LinkedList primeList;
     cout << "The sum of the multiplicative inverses of the first 20 prime numbers is: " << sumOfInverses << endl;
 
 
+//Question 2
+
+int main {
+    LinkedList years;
+    years.push_back(1,365.25);          //Julian
+    years.push_back(2, 365.24219);      //Revised
+    years.push_back(3, 365.2425);       //Gregorian
+    years.push_back(4, 365.25636);      //Siderial
+    years.push_back(5, 365.24219);      //Tropical
+    years.push_back(6, 365.259636);     //Anomalistic
+    years.push_back(7, 346.62);         //Eclipse
+    years.push_back(8, 411.78443029);   //Full moon
+    years.push_back(9, 365.2568983);    //Gaussian
+
+    int min = years.at(0);
+    int max = years.at(0);
+    int temp;
+
+    for (ListNode* iter = head, iter->next != nullptr, iter->next) {          //use != nullptr or .size?
+        temp = iter->next->value;
+        temp = temp * 10000;
+
+        if (temp < min) {
+            min = temp;
+        }
+
+        else if (temp > min) {
+            max = temp;
+        }
+    }
+
+    int diff = max - min;
+
+    std::cout << "Smallest value: " << min << ", largest value: " << max << ", difference: " << diff << std::endl;s
+        
+    return 0;
+}
+
+
 //Question 3
 LinkedList nasdaqList;
 
