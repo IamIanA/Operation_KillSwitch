@@ -45,8 +45,9 @@ years.push_back(7, 346.62);         //Eclipse
 years.push_back(8, 411.78443029);   //Full moon
 years.push_back(9, 365.2568983);    //Gaussian
 
-
+years.print();
 years.selection_sort();
+years.print();
 
 double min = years.get_head()->data * 10000.0;
 double max = years.get_head()->data * 10000.0;
