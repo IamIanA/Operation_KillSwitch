@@ -81,8 +81,8 @@ nasdaqList.push_back(15, 312.23); // Amgen
 
 double totalCost = 0.0;
 // iter head or head equals 
-ListNode* current = nasdaqList.get_head();// Get the head of the list
-while (current != nullptr) { // Iterate through the list
+ListNode* current_index = nasdaqList.get_head();// Get the head of the list
+while (current_index != nullptr) { // Iterate through the list
     totalCost = totalCost + (3 * company->data); // Add the data field (the inverse)
     company = company->next; // Move to the next node
     cout << "Total cost of buying 3 shares of each company on March 14th 2025: $" << totalCost << endl;
