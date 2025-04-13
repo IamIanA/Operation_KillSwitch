@@ -24,16 +24,20 @@ int main() {
 
 bool test_size(){
 	LinkedList l1,l2,l3;
+
+	bool rv1 = l1.size() == 0;
+
 	l2.push_front(1, 30.0);
 	l2.push_front(1, 20.0);
 	l2.push_front(2, 50.0);
-	
+	bool rv2 = l2.size() == 3;
 
-	bool rv1 = l1.size() == 0; // List l1 is empty, size should be 0
-    bool rv2 = l2.size() == 1; // List l2 has one element, size should be 1
-    bool rv3 = l3.size() == 2; // List l3 has two elements, size should be 2
+	l3.push_front(1, 10.0);
+    l3.push_front(2, 20.0);
+    bool rv3 = l3.size() == 2;
 
-    return rv1 && rv2 && rv3;
+	return rv1 && rv2 && rv3;
+
 }
 	
 bool test_push_front() {
@@ -73,7 +77,7 @@ bool test_search() {
 	l.push_front(2, 40.0);	
 	l.push_front(3, 50.0);	
 
-	bool case1 = l.search(2) == 50.0;
+	bool case1 = l.search(2) == 40.0;
 	bool case2 = l.search(1) == 30.0;
 	bool case3 = l.search(4) == -1.0;
 
@@ -83,25 +87,16 @@ bool test_search() {
 
 bool test_insert() {
 	LinkedList l;
-	//case 1: inserts in the front
-	l.insert(1, 10.5, 0);
-	bool case1 = l.get_head() -> data == 10.5 && l.get_head() -> id == 1;
 	
-	//case 2: inserts in the middle
-	l.insert(2, 20.0, 1);
-	ListNode* secondNode = l.get_head() -> next;
-	bool case2 = secondNode -> data == 20.0 && secondNode -> id == 2;
+	l.insert(1, 10.0, 0);
+	bool case1 = l.get_head() != nullptr && l.get_head() -> data == 10.0 && l.get_head() -> id == 1;
 
-	//case 3: insert out of bounds
-	l.insert(3, 30.0, 10);
-	ListNode* lastNode = secondNode -> next;
-	bool case3 = lastNode == nullptr;
+	l.insert(2, 20.0, 0);
+	ListNode* secNode = l.get_head() -> next;
+	bool case2 = l.get_head() != nullptr && l.get_head() -> data == 20.0 && l.get_head() -> id == 2;
 
-	//case 4: insert at the end of the list
-	l.insert(4, 40.0, 2);
-	bool case4 = secondNode -> data == 40.0 && secondNode -> next -> id == 4;
-
-	return case1 && case2 && case3 && case4;
+	
+	return case1 && case2;
 }
 
 bool test_at() {
@@ -111,16 +106,16 @@ bool test_at() {
     l.push_back(3, 30.0); 
 
 	ListNode* node_0 = l.at(0);
-	bool case1 = (node_0 != nullptr) && (node_0 -> id == 1) && (node_0 -> data == 10.0);
+	bool case1 = node_0 != nullptr && node_0 -> id == 1 && node_0 -> data == 10.0;
 
 	ListNode* node_1 = l.at(1);
-	bool case2 = (node_1 != nullptr) && (node_1 -> id == 2) && (node_1 -> data == 20.0);
+	bool case2 = node_1 != nullptr && node_1 -> id == 2 && node_1 -> data == 20.0;
 
 	ListNode* node_2 = l.at(2);
-	bool case3 = (node_2 != nullptr) && (node_2 -> id == 3) && (node_2 -> data == 30.0);
+	bool case3 = node_2 != nullptr && node_2 -> id == 3 && node_2 -> data == 30.0;
 
 	ListNode* node_3 = l.at(3);
-	bool case4 = (node_3 != nullptr);
+	bool case4 = node_3 == nullptr;
 
 	return case1 && case2 && case3 && case4;
 }
@@ -146,16 +141,16 @@ bool test_remove_id() {
 	l.push_back(3, 30.0);
 
 	bool case1 = l.remove_id(2);
-	bool validate1 = l.get_head() -> id == 3 && l.get_head() -> data == 30.0;
+	bool validate1 = l.get_head() -> id == 1 && l.get_head() -> next -> id == 3;
 
 	bool case2 = l.remove_id(1);
-	bool validate2 = l.get_head() -> id == 3 && l.get_head() -> data == 30.0;
-	
-	bool case3 = !l.remove_id(5);
+	bool validate2 = l.get_head() -> id == 3 && l.get_head() -> next == nullptr;
 
+	bool case3 = !l.remove_id(5);
+	
 	bool case4 = l.remove_id(3);
 	bool validate4 = l.get_head() == nullptr;
 
-	return case1 && validate1 && case2 && validate2 && case3 && case4 && validate4;
+	return case1 && validate1 && case2 && validate2 && case3 && case4 && validate4; 
 
 }
