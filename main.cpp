@@ -78,13 +78,13 @@ nasdaqList.push_back(13, 76.87);  // AstraZeneca
 nasdaqList.push_back(14, 454.56); // Linde
 nasdaqList.push_back(15, 312.23); // Amgen
 
+cout << "Total cost of buying 3 shares of each company on March 14th 2025: $" << totalCost << endl;
+
 double totalCost = 0.0;
 for (int i = 0; i < nasdaqList.size(); i++) {
     ListNode* company = nasdaqList.at(i);
     totalCost = totalCost + (3 * company->data);
-    cout << "Total cost of buying 3 shares of each company: $" << totalCost << endl;
 }
-
 
 return 0;
 }
