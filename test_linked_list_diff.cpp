@@ -9,6 +9,7 @@ bool test_insert();
 bool test_at();
 bool test_remove();
 bool test_remove_id();
+bool test_remove_data();
 
 int main() {
 	std:: cout << "Test Push Back: " << (test_push_back() ? "Passed" : "Failed") << std:: endl;
@@ -19,7 +20,8 @@ int main() {
 	std:: cout << "Test at function: " << ( test_at() ? "Passed" : "Failed" ) << std:: endl;
 	std:: cout << "Test remove function: " << ( test_remove() ? "Passed" : "Failed" ) << std:: endl;
 	std:: cout << "Test remove id function: " << ( test_remove_id() ? "Passed" : "Failed" ) << std:: endl;
-
+	std:: cout << "Test remove data function: " << ( test_remove_data() ? "Passed" : "Failed" ) << std:: endl;
+	
 }
 
 bool test_size(){
@@ -149,6 +151,27 @@ bool test_remove_id() {
 	bool case3 = !l.remove_id(5);
 	
 	bool case4 = l.remove_id(3);
+	bool validate4 = l.get_head() == nullptr;
+
+	return case1 && validate1 && case2 && validate2 && case3 && case4 && validate4; 
+
+}
+
+bool test_remove_data() {
+	LinkedList l;
+	l.push_back(1, 10.0);
+	l.push_back(2, 20.0);
+	l.push_back(3, 30.0);
+
+	bool case1 = l.remove_data(20.0);
+	bool validate1 = l.get_head() -> data == 10.0 && l.get_head() -> next -> data == 30.0;
+
+	bool case2 = l.remove_data(10.0);
+	bool validate2 = l.get_head() -> data == 30.0 && l.get_head() -> next == nullptr;
+
+	bool case3 = !l.remove_data(50.0);
+	
+	bool case4 = l.remove_data(30.0);
 	bool validate4 = l.get_head() == nullptr;
 
 	return case1 && validate1 && case2 && validate2 && case3 && case4 && validate4; 
