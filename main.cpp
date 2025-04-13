@@ -34,37 +34,28 @@ LinkedList primeList;
 
 //Question 2
 
-    LinkedList years;
-    years.push_back(1,365.25);          //Julian
-    years.push_back(2, 365.24219);      //Revised
-    years.push_back(3, 365.2425);       //Gregorian
-    years.push_back(4, 365.25636);      //Siderial
-    years.push_back(5, 365.24219);      //Tropical
-    years.push_back(6, 365.259636);     //Anomalistic
-    years.push_back(7, 346.62);         //Eclipse
-    years.push_back(8, 411.78443029);   //Full moon
-    years.push_back(9, 365.2568983);    //Gaussian
+LinkedList years;
+years.push_back(1,365.25);          //Julian
+years.push_back(2, 365.24219);      //Revised
+years.push_back(3, 365.2425);       //Gregorian
+years.push_back(4, 365.25636);      //Siderial
+years.push_back(5, 365.24219);      //Tropical
+years.push_back(6, 365.259636);     //Anomalistic
+years.push_back(7, 346.62);         //Eclipse
+years.push_back(8, 411.78443029);   //Full moon
+years.push_back(9, 365.2568983);    //Gaussian
 
-    int min = years.at(0);
-    int max = years.at(0);
-    int temp;
+int min = years.at(1)->data;
+int max = years.at(1)->data;
+int temp;
 
-    for (ListNode* iter = head, iter->next != nullptr, iter->next) {          //use != nullptr or .size?
-        temp = iter->next->value;
-        temp = temp * 10000;
+years.
 
-        if (temp < min) {
-            min = temp;
-        }
+int diff = max - min;
 
-        else if (temp > min) {
-            max = temp;
-        }
-    }
-
-    int diff = max - min;
-
-    std::cout << "Smallest value: " << min << ", largest value: " << max << ", difference: " << diff << std::endl;
+std::cout << "Smallest value: " << min << ", largest value: " << max << ", difference: " << diff << std::endl;
+        
+return 0;
 
 //Question 3
 LinkedList nasdaqList;
