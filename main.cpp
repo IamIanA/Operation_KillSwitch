@@ -8,7 +8,6 @@ using namespace std;
 int main () {
 
 //Quesiton 1
-
 LinkedList primeList;
 
     //The first 20 prime numbers
@@ -33,7 +32,6 @@ LinkedList primeList;
 
 
 //Question 2
-
 LinkedList years;
 years.push_back(1, 365.25);          //Julian
 years.push_back(2, 365.24219);      //Revised
