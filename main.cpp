@@ -82,8 +82,9 @@ double totalCost = 0.0;
 for (int i = 0; i < nasdaqList.size(); i++) {
     ListNode* company = nasdaqList.at(i);
     totalCost = totalCost + (3 * company->data);
+    cout << "Total cost of buying 3 shares of each company: $" << totalCost << endl;
 }
-cout << "Total cost of buying 3 shares of each company: $" << totalCost << endl;
+
 
 return 0;
 }
