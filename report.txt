@@ -11,14 +11,14 @@ g++ -std=c++11 test_linked_list_diff.cpp linked_list_project.cpp
 
 Questions
 a ) (Tom) The sum of the multiplicative inverses of the first 20 prime numbers is: 1.7428669169.
-b ) (Ollie) The difference between the largest and smallest calculation in days after 10,000 years is ~651,644 days
-c ) (Naomi) -> The total cost of buying 3 shares of each company using the data from March 14th 2025 is $16404.27
+b ) (Ollie) The difference between the largest and smallest calculation in days after 10,000 years is ~ 651,644 days
+c ) (Naomi) The total cost of buying 3 shares of each company using the data from March 14th 2025 is $16404.27
 
 
 3) how you divided the work among your group members:
 
-To divid the work among the group I used a google sheet and 
-created a table of different tasked that needed to be acomplished.
+To divide the work among the group I used a google sheet and 
+created a table of different tasks that needed to be acomplished.
 The chart can be accessed here: https://docs.google.com/spreadsheets/d/1xmEHvThoLqYWN4RGbgEASjSHlgDrBIuIG3cwAA2xAtE/edit?usp=sharing
 Each member of the group had specific tasks which were assigned to them
 at the start of the project. 
@@ -44,8 +44,8 @@ What did Tom do?
     Task 2) Main.cpp-Question 1(Primes):
         Tom had to complete the first question in main.cpp
     Task 3) Report.pdf:
-        Tom had to create the report which included how to run the test
-        answers to the Qs, and adding who did What
+        Tom had to create the report which included how to run the test, with
+        answers to the questions, and adding who did what
     
 What did Naomi do?
     Task 1) main.cpp-Question 3 (NASDAQ):
